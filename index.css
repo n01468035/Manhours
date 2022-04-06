@@ -1,0 +1,60 @@
+
+body{
+    width:80%;
+    margin: auto;
+    text-align: center;
+    color:#777777;
+}
+
+td, th, button{
+    padding: 5px;
+}
+
+button{
+    font-weight: 600;
+    background-color: #d7cfc8;
+    color: #ff9933;
+    border-radius: 10px;
+}
+
+h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+#add-emp, #add-man-hours{
+    border: 1px solid #777777;
+    border-inline-color: #ff9933;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+#display-table{
+    border-radius: 10px;
+    border-inline-color: #ff9933;
+
+}
+
+#logo, #main-heading  {
+    display: inline-block;
+}
+
+img{
+    position: relative;
+    top:12px;
+}
+
+label{
+    font-weight: 800;
+    text-align: left;
+}
+
+h1,td{
+    color:#777777;
+}
+th{
+    color: #ff9933;
+}
+select{
+    width:100px;
+}

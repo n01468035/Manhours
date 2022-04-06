@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <br><br>
+    <div id = "heading">
+        <img id="logo" src ="logo.png" height="50px" width="40px">
+        <h1 id="main-heading">HUBH ENGINEERING & PROJECT MANAGEMENT INC.</h1>    
+    </div>
+    <br><br>
+    <!-- *************************ADDING EMPLOYEE**************************************** -->
+    <div id="add-emp">
+            <h2>Add Employee</h2>
+            <label>Name:</label>
+            <input id="empName" type="text">
+            <br><br>
+            <label>Employee ID:</label>
+            <input id="empID" type="text">
+            <br><br>
+            <button id="save" onclick="saveEmp()">Save to library</button>
+            <button id="clear" onclick="clearDetails()">Clear</button>
+        <br><br>
+    </div>
+    
+    <!-- **************************ADDING MAN HOURS******************************************* -->
+    <br>
+
+    <div id="add-man-hours">
+            <h2>Add Man-Hours</h2>
+            
+            <label>Employee ID:</label>
+            <select id="emp-id" type="text"><option value="">Choose here</option></select>
+            <br><br>
+        
+            <label>Date:</label>
+            <input id="emp-date" type="date">
+            <br><br>
+        
+            <label>Hours:</label>
+            <input id = "emp-hours" type="number">
+            <br><br>
+            <button onclick="saveHours()">Add Hours</button>
+        <br><br>
+    </div>
+    
+    <!-- *****************************DISPLAYING EMPLOYEE HOURS********************************** -->
+    <br>
+    <h2>Details of Employee-hours</h2>
+    <div>
+        <table id='display-table' border=2>
+            <thead>
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee name</th>
+                    <th id="7-day"></th>
+                    <th id="6-day"></th>
+                    <th id="5-day"></th>
+                    <th id="4-day"></th>
+                    <th id="3-day"></th>
+                    <th id="2-day"></th>
+                    <th id="1-day"></th>
+                    <th style="background-color: #777777; color: #ff9933">Last 7-day Total</th>
+                </tr>
+            </thead>
+            <tbody id="data">
+            </tbody>
+        </table>
+        <br><br>
+        <button onclick="prevDate()">Previous</button>
+        <button onclick="nextDate()">Next</button>
+        <button onclick="update()">Update</button>
+    </div>
+    <br><br>
+
+<!---------------------- JavaScript File linking ------------------------------------------------->
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
